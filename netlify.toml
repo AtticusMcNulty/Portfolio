@@ -1,3 +1,4 @@
-[[edge_functions]]
-    path = "/resume.json"
-    function = "resume.json"
+[[redirects]]
+from = "/*"
+to = "/score_board.html"
+status = 200
