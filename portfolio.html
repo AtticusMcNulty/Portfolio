@@ -1,310 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="https://use.typekit.net/nul2nsz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nul2nsz.css" />
 
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="portfolio.css" />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="portfolio.js"></script>
-</head>
-<body>
+    <script src="portfolio.js" defer></script>
+  </head>
+  <body>
     <div id="header_button" onclick="add_border()">
-        <div id="line1"></div>
-        <div id="line2"></div>
-        <div id="line3"></div>
-    </div>    
+      <div id="line1"></div>
+      <div id="line2"></div>
+      <div id="line3"></div>
+    </div>
 
     <div id="header_section">
-        <div id="header_name_square">
-            AM
+      <div id="header_name_square">AM</div>
+      <div id="header_nav_section">
+        <a href="#main_section">
+          <div class="nav_section" id="main_nav_section">
+            <img class="header_nav_img" src="images/home.png" />
+            <div class="header_nav_container">
+              <span class="header_nav_text">HOME</span>
+            </div>
+          </div>
+        </a>
+        <a href="#about_section">
+          <div class="nav_section" id="about_nav_section">
+            <img class="header_nav_img" src="images/info.png" />
+            <div class="header_nav_container">
+              <span class="header_nav_text">ABOUT</span>
+            </div>
+          </div>
+        </a>
+        <a href="#skills_section">
+          <div class="nav_section" id="skills_nav_section">
+            <img class="header_nav_img" src="images/web-programming.png" />
+            <div class="header_nav_container">
+              <span class="header_nav_text">SKILLS</span>
+            </div>
+          </div>
+        </a>
+        <a href="#projects_section">
+          <div class="nav_section" id="projects_nav_section">
+            <img class="header_nav_img" src="images/briefcase.png" />
+            <div class="header_nav_container">
+              <span class="header_nav_text">PROJECTS</span>
+            </div>
+          </div>
+        </a>
+        <a href="#contact_section">
+          <div class="nav_section" id="contact_nav_section">
+            <img class="header_nav_img" src="images/contact-mail.png" />
+            <div class="header_nav_container">
+              <span class="header_nav_text">CONTACT</span>
+            </div>
+          </div>
+        </a>
+        <div class="nav_section1" id="header_scrolldown">
+          <img class="header_nav_img" src="images/scroll-bar.png" />
+          <div class="header_nav_container">
+            <span class="header_nav_text">SCROLL</span>
+          </div>
         </div>
-        <div id="header_nav_section">
-            <a href="#main_section">
-                <div class="nav_section" id="main_nav_section">
-                    <img class="header_nav_img" src="images/home.png">
-                    <div class="header_nav_container">
-                        <span class="header_nav_text">HOME</span>
-                    </div>
-                </div>
-            </a>
-            <a href="#about_section">
-                <div class="nav_section" id="about_nav_section">
-                    <img class="header_nav_img" src="images/info.png">
-                    <div class="header_nav_container">
-                        <span class="header_nav_text">ABOUT</span>
-                    </div>
-                </div>
-            </a>
-            <a href="#skills_section">
-                <div class="nav_section" id="skills_nav_section">
-                    <img class="header_nav_img" src="images/web-programming.png">
-                    <div class="header_nav_container">
-                        <span class="header_nav_text">SKILLS</span>
-                    </div>
-                </div>
-            </a>
-            <a href="#projects_section">
-                <div class="nav_section" id="projects_nav_section">
-                    <img class="header_nav_img" src="images/briefcase.png">
-                    <div class="header_nav_container">
-                        <span class="header_nav_text">PROJECTS</span>
-                    </div>
-                </div>
-            </a>
-            <a href="#contact_section">
-                <div class="nav_section" id="contact_nav_section">
-                    <img class="header_nav_img" src="images/contact-mail.png">
-                    <div class="header_nav_container">
-                        <span class="header_nav_text">CONTACT</span>
-                    </div>
-                </div>
-            </a>
-            <div class="nav_section1" id="header_scrolldown">
-                <img class="header_nav_img" src="images/scroll-bar.png">
-                <div class="header_nav_container">
-                    <span class="header_nav_text">SCROLL</span>
-                </div>
-            </div>            
-        </div>
-    </div>    
-    <div id="main_section">
+      </div>
+    </div>
+
+    <div class="content">
+      <div id="main_section">
         <div id="main_photo_section">
-            <img id="main_photo" src="images/dog.JPG">
+          <img id="main_photo" src="images/dog.JPG" />
         </div>
         <div id="main_text_section">
-            <p id="main_text_greeting">HI THERE! I'M</p>
-            <h1 id="main_text_name"><span class="span_color">ATTICUS</span> MCNULTY</h1>
-            <p id="main_text_bio">A <span class="span_color">Computer Science sophomore</span> at Oregon State University, driven by my passion for programming and eager to improve my skills.</p>
-            
-            <div id="main_button_section">
-                <a href="https://publuu.com/flip-book/157521/395311/page/1?cover" target="_blank">
-                    <button id="main_button_resume">Resumé</button>
-                </a>
-                <a href="https://www.instagram.com/atticus.mcnulty/" target="_blank">
-                    <img class="main_img_link" id="main_img_instagram" src="images/instagram.png"></img>
-                </a>
-                <a href="https://www.linkedin.com/in/atticus-mcnulty-157018216/" target="_blank">
-                    <img class="main_img_link" id="main_img_linkedin" src="images/linkedin.png"></img>
-                </a>
-                <a href="https://github.com/AtticusMcNulty" target="_blank">
-                    <img class="main_img_link" id="main_img_github" src="images/github.png"></img>
-                </a>
-            </div>
+          <p id="main_text_greeting">HI THERE! I'M</p>
+          <h1 id="main_text_name">
+            <span class="span_color">ATTICUS</span> MCNULTY
+          </h1>
+          <p id="main_text_bio">
+            A <span class="span_color">Computer Science sophomore</span> at
+            Oregon State University, driven by my passion for programming and
+            eager to improve my skills.
+          </p>
+
+          <div id="main_button_section">
+            <a
+              href="https://publuu.com/flip-book/157521/395311/page/1?cover"
+              target="_blank"
+            >
+              <button id="main_button_resume">Resumé</button>
+            </a>
+            <a
+              href="https://www.instagram.com/atticus.mcnulty/"
+              target="_blank"
+            >
+              <img
+                class="main_img_link"
+                id="main_img_instagram"
+                src="images/instagram.png"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/atticus-mcnulty-157018216/"
+              target="_blank"
+            >
+              <img
+                class="main_img_link"
+                id="main_img_linkedin"
+                src="images/linkedin.png"
+              />
+            </a>
+            <a href="https://github.com/AtticusMcNulty" target="_blank">
+              <img
+                class="main_img_link"
+                id="main_img_github"
+                src="images/github.png"
+              />
+            </a>
+          </div>
         </div>
-    </div>
-    <div class="section" id="about_section">
-        <div class="section_wrapper">
-            <div class="line">
-                <hr class="before_line">
-                <p class="before_line_text">SOME INFO</p>
-            </div>
-            <h2 class="section_header" id="about_header">ABOUT ME</h2>
-            <p class="section_bio" id="about_bio">Hello! I'm Atticus, a freshman Computer Science major at <span class="span_color">Oregon State University</span>. My journey in programming began in <span class="span_color">high school</span>, where I developed a strong foundation in languages like <span class="span_color">Java and Python</span>. In college, I'm currently diving deeper into the world of CS, having already gained knowledge of C/C++ through my coursework and exploring web-based development in my free time (<span class="span_color">HTML, CSS, JavaScript, React</span>).  My ultimate goal is to leverage technology for <span class="span_color">positive change</span> and make a lasting impact. I'm excited to continue my learning and contribute to the evolving field of CS.</p>
+      </div>
+      <div class="section" id="about_section">
+        <div class="section_header">
+          <div class="line">
+            <hr class="before_line" />
+            <p class="before_line_text">SOME INFO</p>
+          </div>
+          <h2 class="section_title" id="about_header">ABOUT ME</h2>
         </div>
-    </div>
-    <div class="section" id="skills_section">
-        <div class="section_wrapper">
-            <div class="line">
-                <hr class="before_line">
-                <p class="before_line_text">CHECK OUT MY</p>
-            </div>
-            
-            <h2 class="section_header">SKILLS</h2>
-            
-            <div class="section_bio" id="skills_bio">
-              <div class="skill">
-                <img class="skill_image" src="images/css-3.png">
-                <p class="skill_text">CSS</p>
-              </div>
-              <div class="skill">
-                  <img class="skill_image" src="images/html-5.png">
-                  <p class="skill_text">HTML</p>
-              </div>
-              <div class="skill">
-                  <img class="skill_image" src="images/js.png">
-                  <p class="skill_text">JS</p>
-              </div>
-              <div class="skill">
-                  <img class="skill_image" src="images/python.png">
-                  <p class="skill_text">PYTHON</p>
-              </div>
-              <div class="skill">
-                  <img class="skill_image" src="images/java.png">
-                  <p class="skill_text">JAVA</p>
-              </div>
-              <div class="skill">
-                  <img class="skill_image" src="images/c-.png">
-                  <p class="skill_text">C++</p>
-              </div>
-              <div class="skill">
-                  <img class="skill_image" src="images/networking.png">
-                  <p class="skill_text">Comm.</p>
-              </div>
-              <div class="skill">
-                  <img class="skill_image" src="images/conversation.png">
-                  <p class="skill_text">Teamwork</p>
-              </div>
-              <div class="skill">
-                  <img class="skill_image" src="images/directions.png">
-                  <p class="skill_text">Flexibility</p>
-              </div>
-              <div class="skill">
-                  <img class="skill_image" src="images/idea.png">
-                  <p class="skill_text">Prob-Solving</p>
-              </div>
-              <div class="skill">
-                  <img class="skill_image" src="images/discipline.png">
-                  <p class="skill_text">Self-Manage</p>
-              </div>
-              <div class="skill">
-                  <img class="skill_image" src="images/tree.png">
-                  <p class="skill_text">Organization</p>
-              </div>
-            </div>
+        <p class="section_body" id="about_bio">
+          Hello! I'm Atticus, a freshman Computer Science major at
+          <span class="span_color">Oregon State University</span>. My journey in
+          programming began in <span class="span_color">high school</span>,
+          where I developed a strong foundation in languages like
+          <span class="span_color">Java and Python</span>. In college, I'm
+          currently diving deeper into the world of CS, having already gained
+          knowledge of C/C++ through my coursework and exploring web-based
+          development in my free time (<span class="span_color"
+            >HTML, CSS, JavaScript, React</span
+          >). My ultimate goal is to leverage technology for
+          <span class="span_color">positive change</span> and make a lasting
+          impact. I'm excited to continue my learning and contribute to the
+          evolving field of CS.
+        </p>
+      </div>
+      <div class="section" id="skills_section">
+        <div class="section_header">
+          <div class="line">
+            <hr class="before_line" />
+            <p class="before_line_text">CHECK OUT MY</p>
+          </div>
+          <h2 class="section_title">SKILLS</h2>
         </div>
-    </div>
-    <div class="section" id="projects_section">
-        <div class="section_wrapper">
-            <div class="line">
-                <hr class="before_line">
-                <p class="before_line_text">TAKE A LOOK AT MY</p>
+        <div class="section_body" id="skills_bio">
+          <div class="skill">
+            <img class="skill_image" src="images/css-3.png" />
+            <p class="skill_text">CSS</p>
+          </div>
+          <div class="skill">
+            <img class="skill_image" src="images/html-5.png" />
+            <p class="skill_text">HTML</p>
+          </div>
+          <div class="skill">
+            <img class="skill_image" src="images/js.png" />
+            <p class="skill_text">JS</p>
+          </div>
+          <div class="skill">
+            <img class="skill_image" src="images/python.png" />
+            <p class="skill_text">PYTHON</p>
+          </div>
+          <div class="skill">
+            <img class="skill_image" src="images/java.png" />
+            <p class="skill_text">JAVA</p>
+          </div>
+          <div class="skill">
+            <img class="skill_image" src="images/c-.png" />
+            <p class="skill_text">C++</p>
+          </div>
+          <div class="skill">
+            <img class="skill_image" src="images/networking.png" />
+            <p class="skill_text">Comm.</p>
+          </div>
+          <div class="skill">
+            <img class="skill_image" src="images/conversation.png" />
+            <p class="skill_text">Teamwork</p>
+          </div>
+          <div class="skill">
+            <img class="skill_image" src="images/directions.png" />
+            <p class="skill_text">Flexibility</p>
+          </div>
+          <div class="skill">
+            <img class="skill_image" src="images/idea.png" />
+            <p class="skill_text">Prob-Solving</p>
+          </div>
+          <div class="skill">
+            <img class="skill_image" src="images/discipline.png" />
+            <p class="skill_text">Self-Manage</p>
+          </div>
+          <div class="skill">
+            <img class="skill_image" src="images/tree.png" />
+            <p class="skill_text">Organization</p>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="projects_section">
+        <div class="section_header">
+          <div class="line">
+            <hr class="before_line" />
+            <p class="before_line_text">TAKE A LOOK AT MY</p>
+          </div>
+          <h2 class="section_title">PROJECTS</h2>
+        </div>
+        <div class="section_body">
+          <div class="project">
+            <div>
+              <a
+                href="https://replit.com/@AtticusMcNulty/Wordle-Test?v=1"
+                target="_blank"
+              >
+                <img class="project_image" src="images/wordle.png" />
+              </a>
             </div>
-
-            <h2 class="section_header">PROJECTS</h2>
-
-            <div id="projects">
-                <div class="project">
-                    <div>
-                        <a href="https://replit.com/@AtticusMcNulty/Wordle-Test?v=1" target="_blank">
-                            <img class="project_image" src="images/wordle.png">
-                        </a>
-                    </div>
-                    <div>
-                        <h2 class="project_title">Wordle</h2>
-                        <h4 class="project_info">Programs Used: <span class="span_color">Python</span></h4>
-                        <ul id="project_bulletpoints">
-                            <li class="project_bulletpoint">Replica of the game Wordle I built in high school for the APCSP final project</li>
-                            <li class="project_bulletpoint">Objective of the game is to guess the hidden five-letter word within 6 attempts</li>
-                            <li class="project_bulletpoint">You can type hint in order to get a clue on a remaining character in the word, be careful though as it takes away from your total score</li>
-                        </ul>
-                    </div>
+            <div>
+              <h2 class="project_title">Wordle</h2>
+              <h4 class="project_info">
+                Programs Used: <span class="span_color">Python</span>
+              </h4>
+              <ul class="project_bulletpoints">
+                <li class="project_bulletpoint">
+                  Replica of the game Wordle I built in high school for the
+                  APCSP final project
+                </li>
+                <li class="project_bulletpoint">
+                  Objective of the game is to guess the hidden five-letter word
+                  within 6 attempts
+                </li>
+                <li class="project_bulletpoint">
+                  You can type hint in order to get a clue on a remaining
+                  character in the word, be careful though as it takes away from
+                  your total score
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <a
+                href="https://keen-creponne-55c4c1.netlify.app/"
+                target="_blank"
+              >
+                <img class="project_image" src="images/ATtrack.png" />
+              </a>
+            </div>
+            <div>
+              <h2 class="project_title">ATTrack</h2>
+              <h4 class="project_info">
+                Programs Used: <span class="span_color">HTML</span>,
+                <span class="span_color">CSS</span>,
+                <span class="span_color">JS</span>
+              </h4>
+              <ul class="project_bulletpoints">
+                <li class="project_bulletpoint">
+                  I developed this app as a way for my dad to keep track of my
+                  sister's stats during her soccer games
+                </li>
+                <li class="project_bulletpoint">
+                  It has tabs for in-game stats, analytics, feedback, all time
+                  stats, highscores, acheivements, history, and a profile
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <a
+                href="https://replit.com/@AtticusMcNulty/Hunt-the-Wumpus?v=1"
+                target="_blank"
+              >
+                <img class="project_image" src="images/wumpus.png" />
+              </a>
+            </div>
+            <div>
+              <h2 class="project_title">Hunt the Wumpus</h2>
+              <h4 class="project_info">
+                Programs Used: <span class="span_color">C++</span>
+              </h4>
+              <ul class="project_bulletpoints">
+                <li class="project_bulletpoint">
+                  Hunt the Wumpus is a game where players navigate a grid,
+                  shooting arrows and collecting gold while avoiding pits, bats,
+                  and the deadly Wumpus
+                </li>
+                <li class="project_bulletpoint">
+                  This is a game I built for one of my assignments in my first
+                  college CS class
+                </li>
+                <li class="project_bulletpoint">
+                  To run the game, follow the instructions in the description,
+                  be patient when running the first command
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="project" id="project4">
+            <div>
+              <a href="https://warm-sprite-33debe.netlify.app/" target="_blank">
+                <img class="project_image" src="images/MyMeals.png" />
+              </a>
+            </div>
+            <div>
+              <h2 class="project_title">My Meals</h2>
+              <h4 class="project_info">
+                Programs Used:
+                <span class="span_color">React, NodeJS, Spoonacular API</span>
+              </h4>
+              <ul class="project_bulletpoints">
+                <li class="project_bulletpoint">
+                  I built this website in my second year of college as a way to
+                  keep track of various food related aspects of my life
+                </li>
+                <li class="project_bulletpoint">
+                  MyMeals provides several functions to users: a virutal fridge
+                  and shopping cart, ingredient and recipe search using
+                  Spoonacular API, and meal tracking/planning.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="contact_section">
+        <div class="section_header">
+          <div class="line">
+            <hr class="before_line" />
+            <p class="before_line_text">REACH OUT</p>
+          </div>
+          <h2 class="section_title">Contact</h2>
+        </div>
+        <div class="section_body" id="contact_body">
+          <div id="contact_request">
+            <h5 class="contact_type_header" id="contact_type_header1">
+              Send your request
+            </h5>
+            <form>
+              <div class="input_row">
+                <div class="input_group">
+                  <label>Name</label>
+                  <input
+                    class="contact_input"
+                    id="contact_input1"
+                    type="text"
+                    placeholder="First Last"
+                  />
                 </div>
-                <div class="project">
-                    <div>
-                        <a href="https://keen-creponne-55c4c1.netlify.app/" target="_blank">
-                            <img class="project_image" src="images/ATtrack.png">
-                        </a>
-                    </div>
-                    <div>
-                        <h2 class="project_title">ATTrack</h2>
-                        <h4 class="project_info">Programs Used: <span class="span_color">HTML</span>, <span class="span_color">CSS</span>, <span class="span_color">JS</span></h4>
-                        <ul id="project_bulletpoints">
-                            <li class="project_bulletpoint">I developed this app as a way for my dad to keep track of my sister's stats during her soccer games</li>
-                            <li class="project_bulletpoint">It has tabs for in-game stats, analytics, feedback, all time stats, highscores, acheivements, history, and a profile</li>
-                        </ul>
-                    </div>
+                <div class="input_group">
+                  <label>Phone</label>
+                  <input
+                    class="contact_input"
+                    id="contact_input2"
+                    type="text"
+                    placeholder="(***) ***-****"
+                  />
                 </div>
-                <div class="project" id="project3">
-                    <div>
-                        <a href="https://replit.com/@AtticusMcNulty/Hunt-the-Wumpus?v=1" target="_blank">
-                            <img class="project_image" src="images/wumpus.png">
-                        </a>
-                    </div>
-                    <div>
-                        <h2 class="project_title">Hunt the Wumpus</h2>
-                        <h4 class="project_info">Programs Used: <span class="span_color">C++</span></h4>
-                        <ul id="project_bulletpoints">
-                            <li class="project_bulletpoint">Hunt the Wumpus is a game where players navigate a grid, shooting arrows and collecting gold while avoiding pits, bats, and the deadly Wumpus</li>
-                            <li class="project_bulletpoint">This is a game I built for one of my assignments in my first college CS class</li>
-                            <li class="project_bulletpoint">To run the game, follow the instructions in the description, be patient when running the first command</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project" id="project4">
-                  <div>
-                      <a href="https://warm-sprite-33debe.netlify.app/" target="_blank">
-                          <img class="project_image" src="images/MyMeals.png">
-                      </a>
-                  </div>
-                  <div>
-                      <h2 class="project_title">My Meals</h2>
-                      <h4 class="project_info">Programs Used: <span class="span_color">React, NodeJS, Spoonacular API</span></h4>
-                      <ul id="project_bulletpoints">
-                          <li class="project_bulletpoint">I built this website in my second year of college as a way to keep track of various food related aspects of my life</li>
-                          <li class="project_bulletpoint">MyMeals provides several functions to users: a virutal fridge and shopping cart, ingredient and recipe search using Spoonacular API, and meal tracking/planning.</li>
-                      </ul>
-                  </div>
               </div>
-            </div>
-        </div>
-    </div>
-    <div class="section" id="contact_section">
-        <div class="section_wrapper">
-            <div class="line">
-                <hr class="before_line">
-                <p class="before_line_text">REACH OUT</p>
-            </div>
-
-            <h2 class="section_header">Contact</h2>          
-
-            <div id="contact_box">
-                <div id="contact_request">
-                    <h5 class="contact_type_header" id="contact_type_header1">Send your request</h5>
-                    <form>
-                        <div class="input_row">
-                            <div class="input_group">
-                                <label>Name</label>
-                                <input class="contact_input" id="contact_input1" type="text" placeholder="First Last">
-                            </div>
-                            <div class="input_group">
-                                <label>Phone</label>
-                                <input class="contact_input" id="contact_input2" type="text" placeholder="(***) ***-****">
-                            </div>
-                        </div>
-                        <div class="input_row">
-                            <div class="input_group">
-                                <label>Email</label>
-                                <input class="contact_input" id="contact_input3" type="text" placeholder="blank@gmail.com">
-                            </div>
-                            <div class="input_group">
-                                <label>Subject</label>
-                                <input class="contact_input" id="contact_input4" type="text" placeholder="Context of Email">
-                            </div>
-                        </div>
-                    </form>
-
-                    <label>Message</label>
-                    <textarea rows="5" placeholder="Your Message"></textarea>
-
-                    <button id="send_btn" type="submit" onclick="get_user_info()">SEND</button>
+              <div class="input_row">
+                <div class="input_group">
+                  <label>Email</label>
+                  <input
+                    class="contact_input"
+                    id="contact_input3"
+                    type="text"
+                    placeholder="blank@gmail.com"
+                  />
                 </div>
-
-                <div id="contact_reach">
-                    <h5 class="contact_type_header">Reach Me</h5>
-
-                    <div class="personal_info">
-                        <p>Personal Email:</p>
-                        <p>awmcnulty@gmail.com</p>
-                    </div>
-                    <div class="personal_info">
-                        <p>School Email:</p>
-                        <p>mcnultya@oregonstate.edu</p>
-                    </div>
-                    <div class="personal_info">
-                        <p>Phone</p>
-                        <p>+1(206) 331 2434</p>
-                    </div>
+                <div class="input_group">
+                  <label>Subject</label>
+                  <input
+                    class="contact_input"
+                    id="contact_input4"
+                    type="text"
+                    placeholder="Context of Email"
+                  />
                 </div>
+              </div>
+            </form>
+            <label>Message</label>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button id="send_btn" type="submit" onclick="get_user_info()">
+              SEND
+            </button>
+          </div>
+          <div id="contact_reach">
+            <h5 class="contact_type_header">Reach Me</h5>
+            <div class="personal_info">
+              <p>Personal Email:</p>
+              <p>awmcnulty@gmail.com</p>
             </div>
+            <div class="personal_info">
+              <p>School Email:</p>
+              <p>mcnultya@oregonstate.edu</p>
+            </div>
+            <div class="personal_info">
+              <p>Phone</p>
+              <p>+1(206) 331 2434</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+
     <footer id="footer">
-        <p id="footer_text">&copy; Atticus McNulty 2023</p>
+      <p id="footer_text">&copy; Atticus McNulty 2023</p>
     </footer>
-</body>
+  </body>
 </html>

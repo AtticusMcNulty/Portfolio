@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #f7f7f7;
   color: #333333;
 
@@ -65,7 +65,11 @@ a:hover {
   transition: width 0.3s;
 }
 
-/* entire sidebar */
+/* 
+**
+SIDEBAR 
+**
+*/
 #header_section {
   display: none;
 
@@ -85,21 +89,10 @@ a:hover {
   z-index: 2;
 }
 
-@media (min-width: 900px) {
-  #header_section {
-    display: block;
-  }
-  #header_button {
-    display: none;
-  }
-}
-
-/* entire sidebar when hovered */
 #header_section:hover {
   width: 200px;
 }
 
-/* name square */
 #header_name_square {
   width: 100%;
   height: 100px;
@@ -114,7 +107,6 @@ a:hover {
   background-color: #4fa27b;
 }
 
-/* entire nav element section */
 #header_nav_section {
   display: flex;
   flex-direction: column;
@@ -129,7 +121,6 @@ a:hover {
   height: 100%;
 }
 
-/* each nav element */
 .nav_section {
   display: flex;
   flex-direction: row;
@@ -154,7 +145,6 @@ a:hover {
   margin-top: 15px;
 }
 
-/* each nav element when hovered */
 .nav_section:hover {
   background: #79c8a3;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -162,7 +152,6 @@ a:hover {
   width: 150px;
 }
 
-/* nav image */
 .header_nav_img {
   width: 20px;
 
@@ -170,7 +159,6 @@ a:hover {
   margin-left: 20px;
 }
 
-/* nav text */
 .header_nav_text {
   display: none;
 
@@ -179,7 +167,6 @@ a:hover {
   letter-spacing: 1.5px;
 }
 
-/* nav text when sidebar is hovered */
 #header_section:hover .header_nav_text {
   display: block;
 }
@@ -239,20 +226,6 @@ a:hover {
   margin: 0px 0px 0px 65px;
 
   text-align: center;
-}
-
-/* less than 670 px */
-@media (max-width: 670px) {
-  #main_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #main_text_section {
-    align-items: center;
-    margin-left: 0px;
-  }
 }
 
 #main_text_greeting,
@@ -322,38 +295,40 @@ a:hover {
   transform: scale(1.02);
 }
 
-/* OVERALL SECTION */
+/* OVERALL */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  margin: 300px 30px 0px 130px;
+  width: 80%;
 
   scroll-margin-top: 100px;
+  margin: 170px 0px 0px 0px;
 }
 
-@media (max-width: 900px) {
-  .section {
-    margin: 300px 30px 0px 30px;
-  }
+.section_header {
+  align-self: start;
+  margin: 0px 0px 0px 10px;
 }
 
-.section_wrapper {
-  position: relative;
+.section_title {
+  font-weight: 500;
+  font-style: normal;
 
-  max-width: 1038px;
+  letter-spacing: 2px;
 }
 
-/* LINE AND SOME INFO */
 .line {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  position: absolute;
-  left: 0px;
-  top: 0px;
 }
 
 .before_line {
@@ -374,40 +349,36 @@ a:hover {
   margin: 0px 0px 5px 20px;
 }
 
-/* ABOUT ME AND BIO */
-.section_header {
-  font-weight: 500;
-  font-style: normal;
+/* 
+**
+ABOUT ME/SKILLS 
+**
+*/
+.section_body {
+  box-sizing: border-box; /* padding included in width */
 
-  letter-spacing: 2px;
-
-  position: absolute;
-  left: 0px;
-  top: 5px;
-}
-
-.section_bio {
   background: #ffffff;
   font-size: 17px;
   font-weight: 500;
 
+  width: 100%;
+
   border: 0px solid white;
   border-radius: 35px;
-
-  max-width: 1000px;
-
   padding: 40px;
-  margin: 100px 0px 0px 0px;
 }
 
-#skills_section {
-  margin-top: 150px;
-}
-
+/* 
+**
+SKILLS 
+**
+*/
 #skills_bio {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
   place-items: center;
+  padding: 40px 0px;
 }
 
 .skill {
@@ -438,33 +409,11 @@ a:hover {
   margin: 8px 0px 0px 0px;
 }
 
-/* less than 900 pixels */
-@media (max-width: 900px) {
-  #skills_bio {
-    width: 80vw;
-    height: 400px;
-  }
-
-  .skills_row {
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .skills_row_inner {
-    justify-content: space-around;
-  }
-}
-
-/* between 900 and 1500 pixels */
-@media (min-width: 900px) and (max-width: 1500px) {
-  #skills_bio {
-    width: 75vw;
-  }
-}
-
-#projects_section {
-  margin-top: 150px;
-}
+/* 
+**
+PROJECTS 
+**
+*/
 
 #projects {
   background: white;
@@ -513,7 +462,7 @@ a:hover {
 }
 
 .project_image:hover {
-  transform: scale(1.01);
+  transform: scale(1.015);
 }
 
 .project_title {
@@ -543,50 +492,15 @@ a:hover {
   font-weight: 500;
 }
 
-#project3 {
+#project4 {
   margin-bottom: 0px;
 }
 
-/* less than 900 pixels */
-@media (max-width: 900px) {
-  .project {
-    flex-direction: column;
-  }
-
-  #projects {
-    width: 71.5vw;
-  }
-}
-
-/* between 900 and 1500 pixels */
-@media (min-width: 900px) and (max-width: 1500px) {
-  .project {
-    flex-direction: column;
-  }
-
-  #projects {
-    width: 70vw;
-  }
-}
-
-#contact_section {
-  margin-top: 150px;
-}
-
-#contact_box {
-  background: white;
-  display: flex;
-  flex-direction: row;
-
-  width: 90vw;
-  max-width: 1038px;
-
-  border: 0px;
-  border-radius: 25px;
-
-  margin-top: 100px;
-}
-
+/* 
+**
+CONTACT 
+**
+*/
 #contact_card_header {
   font-weight: 500;
   font-size: 18px;
@@ -595,10 +509,13 @@ a:hover {
 }
 
 /* left section */
+#contact_body {
+  padding: 0px;
+}
+
 #contact_request {
   flex-basis: 60%;
-
-  padding: 40px 60px;
+  padding: 40px;
 }
 
 #contact_type_header1 {
@@ -617,6 +534,7 @@ a:hover {
 }
 
 input {
+  font-family: "Poppins";
   width: 100%;
   border: 1px solid #eeeeee;
   outline: none;
@@ -624,6 +542,7 @@ input {
 }
 
 textarea {
+  font-family: "Poppins";
   width: 100%;
   border: 1px solid #eeeeee;
   outline: none;
@@ -647,7 +566,7 @@ label {
 .contact_input::placeholder {
   color: #6c757d;
 
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins";
   font-weight: 500;
   font-size: 12px;
 }
@@ -658,7 +577,7 @@ label {
 
 #send_btn {
   color: white;
-
+  font-family: "Poppins";
   background: #79c8a3;
 
   width: 100px;
@@ -666,10 +585,8 @@ label {
 
   border: none;
   outline: none;
-
   border-radius: 25px;
-
-  margin-top: 20px;
+  margin: 0px 0px 20px 20px;
 
   transition: box-shadow 0.4s ease, transform 0.4s ease;
 
@@ -711,31 +628,6 @@ label {
   margin-right: 20px;
 }
 
-@media (max-width: 450px) {
-  .input_group {
-    max-width: 23vw;
-  }
-}
-
-/* less than 900 pixels */
-@media (max-width: 900px) {
-  #contact_box {
-    flex-direction: column;
-
-    width: 87vw;
-  }
-
-  #contact_reach {
-    border-radius: 0px 0px 25px 25px;
-  }
-}
-
-@media (min-width: 900px) and (max-width: 1300px) {
-  #contact_box {
-    width: 80vw;
-  }
-}
-
 #footer {
   background: white;
 
@@ -754,9 +646,91 @@ label {
   font-weight: 400;
 }
 
-/* less than 120 pixels */
+/* 
+**
+MEDIA 
+**
+*/
+/* less than x */
+@media (max-width: 450px) {
+  .input_group {
+    max-width: 23vw;
+  }
+}
+
+@media (max-width: 670px) {
+  #main_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main_text_section {
+    align-items: center;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  #contact_body {
+    flex-direction: column;
+  }
+
+  #contact_reach {
+    border-radius: 0px 0px 25px 25px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project_title {
+    margin-left: 0px;
+  }
+
+  .project_info {
+    margin-left: 0px;
+  }
+
+  .project_bulletpoints {
+    margin-top: 5px;
+    padding-left: 25px;
+  }
+}
+
 @media (max-width: 1200px) {
   #footer {
     margin-left: 0px;
+  }
+}
+
+/* more than x */
+@media (min-width: 700px) {
+  #skills_bio {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  #skills_bio {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  #header_section {
+    display: block;
+  }
+  #header_button {
+    display: none;
+  }
+  .section {
+    margin-left: 100px !important;
+  }
+  #contact_body {
+    display: flex;
+    flex-direction: row;
   }
 }
