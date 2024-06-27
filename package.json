@@ -2,8 +2,8 @@
   "homepage": "https://AtticusMcNulty.github.io/Portfolio",
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "portfolio.js",
+  "description": "A portfolio project",
+  "main": "portfolio.html",
   "scripts": {
     "deploy": "gh-pages -d .",
     "start": "node server.js",
