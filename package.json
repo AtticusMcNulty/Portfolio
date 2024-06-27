@@ -3,7 +3,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "A portfolio project",
-  "main": "portfolio.html",
+  "main": "script.js",
   "scripts": {
     "deploy": "gh-pages -d .",
     "start": "node server.js",
