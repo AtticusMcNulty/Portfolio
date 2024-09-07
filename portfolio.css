@@ -29,7 +29,7 @@ a:hover {
 }
 
 #header_button {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
 
@@ -38,7 +38,7 @@ a:hover {
   width: 25px;
 
   margin: 20px 20px 0px 0px;
-  padding: 1px 2px;
+  padding: 2px 3px;
 
   cursor: pointer;
 
@@ -49,6 +49,7 @@ a:hover {
 }
 
 .clicked {
+  border-radius: 2px;
   outline: 2px solid #79c8a3;
 }
 
